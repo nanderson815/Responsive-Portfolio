@@ -223,3 +223,53 @@ Temporary until correct images are stored in the asset folder. */
     /* Preserves pContainer margins */
     margin: 5px 15px 10px -5px;
 }
+
+
+/* ---------------------------- Responsive Code -------------------------------- */
+
+@media screen and (max-width: 640px){
+    .navigationBar{
+        display: block;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    nav{
+        float: left;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    #pageTitle{
+        width: 100%;
+        float: left;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .container{
+        margin: 110px 20px 0px 20px;
+    }
+
+    .portfolio{
+        width: 469px;
+    }
+
+    #navBar{
+        padding: 10px 0px 10px 0px;
+    }
+
+    #bioPic {
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper {
+        min-height: calc(100vh - 203px);
+    }
+
+    .pContainer{
+        margin: 5px 5px 20px 5px;
+    }
+}
