@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Linked the HTML to the Stylesheet "Style.css" located in the assets folder -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../Assets/css/style.css" />
+    <!-- Placeholder in case we need to add JS as part of a later homework -->
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Bar at the top of the page -->
+    <div class="navigationBar">
+
+        <!-- Page Title that includes my Name in the top left.-->
+        <h1 id="pageTitle">Noah Anderson</h1>
+
+        <!-- Navigation bar within the Header Bar. Links to other pages of the website.-->
+        <nav id="navBar">
+            <a class="navLink" href="index.html">About</a>
+            <a class="navLink" href="portfolio.html">Portfolio</a>
+            <a class="navLink" href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <br>
+
+    <!-- Wrapper used to hold all page content except for the footer, 
+    so that the footer will stick to the bottom of the page -->
+    <div class="wrapper">
+
+        <!-- Container holds all page content; white background -->
+        <div class="container">
+
+             <!-- Title of the container. -->
+            <header>
+                <h1 class="containerTitle">Portfolio</h1>
+            </header>
+
+            <!-- Portfolio container; holds all portfolio cards. -->
+            <div class="portfolio">
+
+                <!-- Individual portfolio cards. Placeholder link to be updated once portfolio is live. -->
+                <div class="pContainer" id="hangman">
+
+                    <!-- Textbox labeling each portfolio container. -->
+                    <a class="portfolioObject" href="#">Hangman</a>
+                </div>
+
+                <div class="pContainer" id="trivia">
+                    <a class="portfolioObject" href="#">Trivia Game</a>
+                </div>
+
+                <div class="pContainer" id="RPC">
+                    <a class="portfolioObject" href="#">Rock Paper Scissors</a>
+                </div>
+
+                <div class="pContainer" id="RPG">
+                    <a class="portfolioObject" href="#">RPG Game</a>
+                </div>
+
+                <div class="pContainer" id="Rutgers">
+                    <a class="portfolioObject" href="#">Rutgers Info Widget</a>
+                </div>
+
+                <!-- Filler objects that are used to left-align the last pContainer within the flexbox (odd number of pContainers). 
+                    Temporary solution until more pContainers are added.  -->
+                <div class="fillingEmptySpace"></div>
+                <div class="fillingEmptySpace"></div>
+                <div class="fillingEmptySpace"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sticky footer; Footer text styled here -->
+    <footer>
+        <p style="color:white; font-size:10px; padding-top: 12px">Copyright &#169;</p>
+    </footer>
+</body>

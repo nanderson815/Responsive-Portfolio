@@ -1,0 +1,225 @@
+/* ------------------------- These styles apply to all pages --------------------------- */
+
+body{
+    /* Sets the background image to gravel. */
+    background: url("../images/gravel.png");
+    /* Removes the page margin. */
+    margin: 0px
+}
+
+p, label {
+    /* Set font style for p tags and input label tags in the contact page. */
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    }   
+
+/* Styles the bar at the top of the page */
+.navigationBar{
+    width: 100%;
+    background: #ffffff;
+    position: fixed;
+    /* Allows the pageTitle and Nav to sit next to eachother in the div. */
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 2px solid #cccccc;
+    /* Ensures the header is always on top when scrolling. */
+    z-index: 100;
+    }
+
+/* Moves the nav container to the far right and middle aligns text. */
+nav{
+    margin-right: 15%;
+    padding-top: 16px;
+    }
+
+/* Styles the individual links within the Nav. */
+.navLink {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    border-right: 2px solid #cccccc;
+    padding-right: 10px;
+}
+
+/* Hovor effects for the individual nav links */
+.navLink:hover{
+    background-color: #4aaaa5;
+    color: white;
+    /* Sets the size of the hover box. */
+    padding: 10px 10px 10px 10px;
+    /* Removes margin when hover to make text not jump around, caused by padding. */
+    margin-left: -5px;
+}
+
+/* Stlyles the page title in the Header "navigator bar". */
+#pageTitle{
+    background: #4aaaa5;
+    color: white;
+    /* Aligns left the title */
+    margin: -10px 0px 0px 15%;
+    /* Vertical Aligns the Text */
+    height: 55px;
+    line-height: 55px;
+    /* Sizes the box to fit the header */
+    padding: 10px 10px 0px 10px;
+    display: block;
+    overflow: hidden;
+    /* Ensures this is always on top. */
+    z-index: 101;
+}
+
+/* Styles the page content header bar and sets it to ful width. */
+header{
+    width: 100%;
+    border-bottom: 2px solid #cccccc;
+}
+
+/* Styles the text within the page header */
+.containerTitle{
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Sets the wrapper equal to window hight - minus the space used by the footer. Makes a sticky footer. */
+.wrapper{
+    min-height: calc(100vh - 159px);
+}
+
+/* Centers and styles the page content container. */
+.container{
+    margin: 65px 15% 0px 15%;
+    border: 1px solid #dddddd;
+    padding: 0px 20px 20px 20px;
+    background: #ffffff;
+    display: block;
+    /* Allows container to expand down the page for smaller devices. */
+    overflow: auto;
+}
+
+/* Styles the footer */
+footer{
+    background-color: grey;
+    height: 40px;
+    /* Ensures there is space bettween content and footer on smaller screens. */
+    margin-top: 29px;
+    /* Sets top footer border. */
+    border-top: 6px solid #4aaaa5;
+    /* Aligns footer text to the center of the footer. */
+    text-align: center;
+}
+
+/* ------------------------ These styles only apply to the bio page. ------------------------ */
+
+#bioPic{
+    /* Floats the pic with the text. */
+    float: left;
+    /* Margin between the text and the image. */
+    margin: 4px 15px 5px 0px;
+    /* Shrinks the image on smaller screens to fit, while preserving aspect ratio. */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Justifys the bio text to make the right-side cutoff square. */
+.biography{
+    text-align: justify;
+}
+
+
+
+/*  ------------------- These are styles unique to the contact.html page -------------------- */
+
+
+/* Sets the input boxes to fit the entire container. */
+#message, #name, #email{
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Styles the standard input button consistent with the rest of the page. */
+#submitButton{
+    background-color: #4aaaa5;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 60px;
+}
+
+/* Glow effect on submit button hover. Used RGB format in order to change opacity to .5. */
+#submitButton:hover{
+    box-shadow: 0px 5px 15px rgb(74, 170, 165, .5);
+}
+
+
+/*  ---------------  These are styles that apply only to the portfolio pages. --------------- */
+
+
+.portfolio{
+    /* Flexbox for the portfolio containers. */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* Sets the margins to match image. */
+    margin: 10px 0px -20px 0px;
+    /* Shrinks the size of the container to force a two column, 
+    3 row flexbox layout while preserving responsiveness. */
+    width: 485px;
+    max-width: 100%;
+}
+
+/* Sizes the container to match image. */
+.pContainer{
+    height: 175px;
+    width: 225px;
+    margin: 5px 15px 35px -5px;
+    /* Set postion to use absolute positioning on portfolioObject, which lales the Container. */
+    position: relative;
+}
+
+.portfolioObject{
+    /* Styles the label text and background */
+    color: white;
+    background-color: #4aaaa5;
+    text-decoration: none;
+    /* Moves the Object into correct position within pContainer. */
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 70%;
+    padding: 10px 0px 10px 0px;
+}
+
+/* Sets a unique background image from loremflickr within PContainer. 
+Temporary until correct images are stored in the asset folder. */
+
+#hangman{
+    background-image: url(https://loremflickr.com/225/200);
+}
+
+#trivia{
+    background-image: url(https://loremflickr.com/225/200/car);
+}
+
+#RPC{
+    background-image: url(https://loremflickr.com/225/200/dog);
+}
+
+#RPG{
+    background-image: url(https://loremflickr.com/225/200/building);
+}
+
+#Rutgers{
+    background-image: url(https://loremflickr.com/225/200/nature);
+}
+
+/* Temporarily aligns left the pContainer objects within the flexbox by taking up horizontal space. */
+.fillingEmptySpace{
+    /* Wdith equal to that of Pcontainer to preserve margins. */
+    width: 225px;
+    /* height zero as to not extend the container further down the screen. */
+    height: 0px;
+    /* Preserves pContainer margins */
+    margin: 5px 15px 10px -5px;
+}
