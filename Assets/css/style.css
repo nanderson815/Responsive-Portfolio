@@ -253,7 +253,8 @@ Temporary until correct images are stored in the asset folder. */
     }
 
     #navBar{
-        padding: 10px 0px 10px 0px;
+        padding: 18px 0px 10px 0px;
+        background: white;
     }
 
     .wrapper {
@@ -270,6 +271,7 @@ Temporary until correct images are stored in the asset folder. */
     .navigationBar{
         display: block;
         margin: 0px 0px 0px 0px;
+        position:static;
     }
     
     nav{
@@ -297,7 +299,7 @@ Temporary until correct images are stored in the asset folder. */
 
     .portfolio{
         width: 469px;
-        margin: 10px 5% 0px 5%;
+        margin: 10px 0% 0px 0%;
     }
 
     #bioPic {
