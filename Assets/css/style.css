@@ -227,7 +227,46 @@ Temporary until correct images are stored in the asset folder. */
 
 /* ---------------------------- Responsive Code -------------------------------- */
 
+@media screen and (max-width: 980px){
+
+    .container{
+        margin: 65px 35% 0px 5%;
+    }
+
+    #pageTitle{
+        margin-left: 5%;
+    }
+
+    nav{
+        margin-right: 5%;
+    }
+
+    .portfolio{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+  
+    .container{
+        margin: 60px 20px 0px 20px;
+    }
+
+    #navBar{
+        padding: 10px 0px 10px 0px;
+    }
+
+    .wrapper {
+        min-height: calc(100vh - 154px);
+    }
+
+    .pContainer{
+        margin: 5px 5px 20px 5px;
+    }
+}
+
 @media screen and (max-width: 640px){
+
     .navigationBar{
         display: block;
         margin: 0px 0px 0px 0px;
@@ -240,6 +279,14 @@ Temporary until correct images are stored in the asset folder. */
         
     }
 
+    .container {
+        margin: 95px 20px 0px 20px;
+    }
+
+    .wrapper {
+        min-height: calc(100vh - 188px);
+    }
+
     #pageTitle{
         width: 100%;
         float: left;
@@ -248,28 +295,13 @@ Temporary until correct images are stored in the asset folder. */
         padding: 0px;
     }
 
-    .container{
-        margin: 110px 20px 0px 20px;
-    }
-
     .portfolio{
         width: 469px;
-    }
-
-    #navBar{
-        padding: 10px 0px 10px 0px;
+        margin: 10px 5% 0px 5%;
     }
 
     #bioPic {
         width: 100%;
         height: auto;
     }
-
-    .wrapper {
-        min-height: calc(100vh - 203px);
-    }
-
-    .pContainer{
-        margin: 5px 5px 20px 5px;
-    }
-}
+}   
