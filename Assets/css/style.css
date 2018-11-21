@@ -159,26 +159,19 @@ footer{
 .portfolio{
     /* Flexbox for the portfolio containers. */
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 591px;
     /* Sets the margins to match image. */
-    margin: 10px 0px -20px 0px;
-    /* Shrinks the size of the container to force a two column, 
-    3 row flexbox layout while preserving responsiveness. */
-    width: 485px;
-    max-width: 100%;
+    margin: 10px 0px -20px -10px;
 }
 
 /* Sizes the container to match image. */
 .pContainer{
-    height: 175px;
-    width: 225px;
-    margin: 5px 15px 35px -5px;
-    /* Set postion to use absolute positioning on portfolioObject, which lales the Container. */
     position: relative;
+    margin: 10px 10px 10px 10px;
 }
 
-.portfolioObject{
+.portfolioTitle{
     /* Styles the label text and background */
     color: white;
     background-color: #4aaaa5;
@@ -187,41 +180,8 @@ footer{
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 70%;
+    top: 60%;
     padding: 10px 0px 10px 0px;
-}
-
-/* Sets a unique background image from loremflickr within PContainer. 
-Temporary until correct images are stored in the asset folder. */
-
-#hangman{
-    background-image: url(https://loremflickr.com/225/200);
-}
-
-#trivia{
-    background-image: url(https://loremflickr.com/225/200/car);
-}
-
-#RPC{
-    background-image: url(https://loremflickr.com/225/200/dog);
-}
-
-#RPG{
-    background-image: url(https://loremflickr.com/225/200/building);
-}
-
-#Rutgers{
-    background-image: url(https://loremflickr.com/225/200/nature);
-}
-
-/* Temporarily aligns left the pContainer objects within the flexbox by taking up horizontal space. */
-.fillingEmptySpace{
-    /* Wdith equal to that of Pcontainer to preserve margins. */
-    width: 225px;
-    /* height zero as to not extend the container further down the screen. */
-    height: 0px;
-    /* Preserves pContainer margins */
-    margin: 5px 15px 10px -5px;
 }
 
 
@@ -230,7 +190,8 @@ Temporary until correct images are stored in the asset folder. */
 @media screen and (max-width: 980px){
 
     .container{
-        margin: 65px 35% 0px 5%;
+        margin: 65px 30% 0px 5%;
+        min-width: 580px;
     }
 
     #pageTitle{
@@ -241,15 +202,13 @@ Temporary until correct images are stored in the asset folder. */
         margin-right: 5%;
     }
 
-    .portfolio{
-        width: 100%;
-    }
+
 }
 
 @media screen and (max-width: 768px){
   
     .container{
-        margin: 60px 20px 0px 20px;
+        max-width: 100%;
     }
 
     #navBar{
@@ -259,6 +218,11 @@ Temporary until correct images are stored in the asset folder. */
 
     .wrapper {
         min-height: calc(100vh - 154px);
+    }
+
+    .portfolio{
+        width: 100%;
+        margin: 10px 10px 10px 8px;
     }
 
     .pContainer{
@@ -283,6 +247,7 @@ Temporary until correct images are stored in the asset folder. */
 
     .container {
         margin: 95px 20px 0px 20px;
+        min-width: 200px;
     }
 
     .wrapper {
@@ -298,8 +263,20 @@ Temporary until correct images are stored in the asset folder. */
     }
 
     .portfolio{
-        width: 469px;
         margin: 10px 0% 0px 0%;
+    }
+
+    .pContainer{
+        width: 100%;
+    }
+
+    .portfolioPic{
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolioTitle{
+        padding: 15px 0px 15px 0px
     }
 
     #bioPic {
