@@ -209,6 +209,7 @@ footer{
   
     .container{
         max-width: 100%;
+        margin: 65px 5% 0px 5%;
     }
 
     #navBar{
@@ -221,12 +222,14 @@ footer{
     }
 
     .portfolio{
-        width: 100%;
+        max-width: 100%;
+        min-width: 580px;
         margin: 10px 10px 10px 8px;
+        justify-content: space-between;
     }
 
     .pContainer{
-        margin: 5px 5px 20px 5px;
+        margin: 5px 10px 20px 5px;
     }
 }
 
@@ -264,6 +267,7 @@ footer{
 
     .portfolio{
         margin: 10px 0% 0px 0%;
+        min-width: 268px;
     }
 
     .pContainer{
